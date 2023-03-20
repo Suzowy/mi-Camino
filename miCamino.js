@@ -272,4 +272,16 @@ console.log(miCamino.material[3].imagenes[1]);
 
 
 
+//for (let i = 0; i < miCamino.cimas.length; i++) {const element = miCamino.cimas[i];console.log(element,i[1])};
 
+const cimasTotal = [8611, 8586, 8516, 8463, 8201, 8167, 8163, 8125, 8091, 8068, 8846, 8035, 8027, 8846];
+
+function promedio(altitud) {
+  let total = 0;
+  for (let i = 0; i < altitud.length; i++) {
+    total += altitud[i];
+  }
+  return console.log(total / altitud.length);
+}
+
+promedio(cimasTotal);
